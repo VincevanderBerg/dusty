@@ -9,3 +9,10 @@ services:
       - "org.springframework.boot.service-connection=postgres"
     ports:
       - '5432:2345'
+
+  ollama:
+    hostname: ollama
+    container_name: ollama
+    image: ollama/ollama
+    ports:
+      - "11434:11434"
